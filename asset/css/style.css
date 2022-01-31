@@ -184,6 +184,9 @@ a.back-to-top img {
 }
 
 @media (max-width:500px) {
+  .container-main {
+    padding: 13px 17px;
+  }
   .navbar-brand img {
     height: 55px!important;
   }
@@ -192,6 +195,9 @@ a.back-to-top img {
   }
 }
 @media (max-width:400px) {
+  .container-main {
+    padding: 10px 13px;
+  }
   .navbar-brand img {
     height: 1.4rem;
   }
