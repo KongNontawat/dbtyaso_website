@@ -21,7 +21,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light py-1 py-md-4">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="image/logo_dbt.png" height="60" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="image/logo_dbt.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -114,32 +114,32 @@
   <!-- Image List -->
   <div id="image_list" class="container container-main mt-4 mt-md-5 mb-4">
     <div class="mb-4">
-      <img src="image/001.jpg" class="w-100">
+      <img src="image/001.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/002.jpg" class="w-100">
+      <img src="image/002.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/003.jpg" class="w-100">
-    </div>
-    <!-- <div class="mb-4">
-      <img src="image/004.jpg" class="w-100">
+      <img src="image/003.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/005.jpg" class="w-100">
+      <img src="image/004.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/006.jpg" class="w-100">
+      <img src="image/005.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/007.jpg" class="w-100">
+      <img src="image/006.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/008.jpg" class="w-100">
+      <img src="image/007.jpg" class="w-100" onclick="showImage(this)">
     </div>
     <div class="mb-4">
-      <img src="image/009.jpg" class="w-100">
-    </div> -->
+      <img src="image/008.jpg" class="w-100" onclick="showImage(this)">
+    </div>
+    <div class="mb-4">
+      <img src="image/009.jpg" class="w-100" onclick="showImage(this)">
+    </div>
 
     <div class="text-center my-2 my-md-5">
       <a href="#!" class="btn btn-primary btn-lg">ดูข้อมูลเพิ่มเติม</a>
@@ -183,9 +183,36 @@
     </div>
   </footer>
 
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
   <script src="asset/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="asset/sweetalert2/dist/sweetalert2.min.js"></script>
   <script src="asset/js/script.js"></script>
+  <script>
+    var modal = document.getElementById("myModal");
+    
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    function showImage(e){
+      modal.style.display = "block";
+      modalImg.src = e.src;
+      captionText.innerHTML = e.alt;
+    }
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+
 </body>
 
 </html>
