@@ -1,0 +1,105 @@
+@font-face {
+  font-family: pridi;
+  src: url(../fonts/Pridi-ExtraLight.ttf),
+  url(../fonts/Pridi-Light.ttf),
+  url(../fonts/Pridi-Regular.ttf),
+  url(../fonts/Pridi-Medium.ttf),
+  url(../fonts/Pridi-SemiBold.ttf),
+  url(../fonts/Pridi-Bold.ttf)
+}
+@font-face {
+  font-family: sarabun;
+  src: url(../fonts/Sarabun-ThinItalic.ttf);
+  src: url(../fonts/Sarabun-Thin.ttf);
+  src: url(../fonts/Sarabun-SemiBoldItalic.ttf);
+  src: url(../fonts/Sarabun-SemiBold.ttf);
+  src: url(../fonts/Sarabun-Regular.ttf);
+  src: url(../fonts/Sarabun-MediumItalic.ttf);
+  src: url(../fonts/Sarabun-Medium.ttf);
+  src: url(../fonts/Sarabun-LightItalic.ttf);
+  src: url(../fonts/Sarabun-Light.ttf);
+  src: url(../fonts/Sarabun-Bold.ttf);
+  src: url(../fonts/Sarabun-BoldItalic.ttf);
+  src: url(../fonts/Sarabun-ExtraLight.ttf);
+}
+
+:root {
+  --primary: #642D8E;
+  --secondary: #F2995C;
+  --tertiary: #FF518D;
+  --quaternary: #30B2FD;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: 'pridi','sarabun',Arial;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.65;
+  position: relative;
+  background-color: #F0F1F2;
+}
+
+a.back-to-top {
+  width: 2.3rem;
+  height: 2.3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  background-color: var(--primary);
+  border-radius: 0.4rem;
+  opacity: 0.7;
+}
+a.back-to-top img {
+  width: 1.4rem;
+}
+
+
+.container-main {
+  max-width: 1150px!important;
+}
+.rounded-3 {
+  border-radius: 0.45rem!important;
+}
+
+.slide img {
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+#image_list img {
+  border-radius: 0.45rem!important;
+}
+
+
+.btn {
+  font-weight: 500;
+}
+
+.btn-secondary,
+.btn-warning {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 0;
+}
+
+
+

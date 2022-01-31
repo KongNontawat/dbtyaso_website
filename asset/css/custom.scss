@@ -1,0 +1,16 @@
+$primary: #642D8E;
+$secondary: #FF518D;
+$info: #30B2FD;
+$warning: #F2995C;
+$light: #ededee;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "info":       $info,
+  "warning":    $warning,
+  "light":      $light
+);
+
+@import '../bootstrap/scss/bootstrap.scss';
+@import '../bootstrap/scss/variables';
